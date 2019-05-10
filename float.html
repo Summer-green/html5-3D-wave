@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Three框架</title>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <style type="text/css">
+        .parent {
+            width: 300px;
+            height: auto;
+            background-color: bisque;
+        }
+
+        .child {
+            width: 90%;
+            height: 300px;
+            background-color: red;
+            float: left;
+        }
+
+        /* .parent:after {
+            content: "hah";
+            height: 0;
+            line-height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both
+        }
+
+        .parent {
+            zoom: 1;
+        } */
+
+        .clear {
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="clear"></div>
+        <!--内部标签：会将这个浮动盒子的父盒子高度重新撑开-->
+    </div>
+</body>
+
+</html>
